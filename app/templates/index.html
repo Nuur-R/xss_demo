@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XSS Demo</title>
+</head>
+<body>
+    <h1>XSS Demo</h1>
+    <form method="post">
+        <label for="message">Message:</label>
+        <input type="text" id="message" name="message">
+        <button type="submit">Submit</button>
+    </form>
+    <h2>Output:</h2>
+    <p>{{ message|safe }}</p>
+</body>
+</html>
